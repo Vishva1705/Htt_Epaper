@@ -1,0 +1,171 @@
+
+
+.labelblockpdf {
+  display: block;
+  margin-bottom: 10px;
+  font-size: larger;
+  color: black;
+  font-weight: bolder;
+}
+
+
+.uploadContainer{
+  background-image: url('https://images.pexels.com/photos/94273/jetty-beach-sunset-sea-94273.jpeg');
+  background-size: cover;
+}
+
+.btncontainer{
+    /* border: 2px solid rgba(255, 255, 255, 0.938); */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+
+  .Blob_Appupload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+  .Blob_container {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed for responsiveness */
+    margin: 0 auto;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.928);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .Blob_container:hover {
+    transform: scale(1.05);
+  }
+  
+  .Blob_container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    z-index: -1;
+  }
+  
+  .title {
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+
+
+.file-input-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+
+/* Styled file input */
+.file-input {
+  font-size: larger;
+  /* color: #333; */
+  padding: 10px;
+  /* border: 4px solid black; */
+  border-radius: 10px;
+  background-color: #0580F9;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.file-input:hover {
+  background-color: #80bbf6;
+}
+
+
+
+.actual-file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Animation for selected file display */
+.selected-file {
+  margin-top: 10px;
+  font-size: larger;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Animation for selected file appearance */
+.selected-file.appear {
+  animation: appear 0.5s ease-in-out;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  
+  .upload-btn {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: large;
+  }
+  
+
+
+.active-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+
+.inactive-btn {
+  background-color: white;
+  color: black;
+  font-size: medium;
+}
+
+
+
+@media (max-width: 768px) {
+  .Blob_container {
+    width: 90%;
+  }
+}

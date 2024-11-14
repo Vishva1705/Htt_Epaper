@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Taun_Taamarai";
+  src: url("../Assets/Myfonts/TAUN_Taamarai.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TAUN_Maragadam";
+  src: url("../Assets/Myfonts/TAUN_Maragadam.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.Input_Holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-top: 0%;
+}
+
+.Each_Product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2%;
+  transition: all 0.3s ease; 
+}
+
+.Each_Product:hover {
+  transform: scale(1.05); 
+  
+}
+
+
+.iconContent {
+  margin: 0px 2%;
+  color: #0078d4; 
+}
+
+
+div.Each_Product input.datepicker[type="date"] {
+    font-size: 18px;
+    font-weight: 800;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid lightblue;
+    cursor: pointer;
+    
+  }
+  
+  div.Each_Product input.datepicker[type="date"]:hover {
+    background-color: #e0e0e0;
+  }
+  
+  div.Each_Product input.datepicker[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+
+
+select {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  border: 3px solid lightblue;
+  cursor: pointer;
+  font-family: 'Taun_Taamarai';
+}
+
+.iconContent svg {
+  font-size: 24px;
+}
+
+.Mask{
+  position: absolute;
+  top: 12%;
+  width: 10%;
+  height: 100%; 
+  left: 45%;
+  background-color: rgb(255 0 0 / 0%);
+}
+
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .Input_Holder {
+    flex: 1; /* Use flex to make them side by side in a row */
+    margin:1% 4%;
+    /* position: fixed; */
+    bottom: 0;
+    width: 90%;
+  }
+
+  .Each_Product {
+    width: 100%;
+    margin: 1% ;
+  }
+
+  div.Each_Product input.datepicker[type="date"] {
+    font-size: 13px;
+    font-family: revert;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 12px;
+    padding: 7px;
+    width: 100%;
+    border: 2px solid lightblue;
+   
+  }
+
+  div.Each_Product input.datepicker[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #fff;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  select {
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    padding: 3px;
+    background-color: white;
+    border-radius: 5px;
+    width: 65%;
+    border: 2px solid lightblue;
+    margin: 0px 2px 0px 0px;
+  }
+
+  .iconContent{
+    margin-right: 5px;
+  }
+
+}

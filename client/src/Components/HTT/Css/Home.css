@@ -1,0 +1,432 @@
+/* Global styles */
+
+@font-face {
+  font-family: "Taun_Taamarai";
+  src: url("../Assets/Myfonts/TAUN_Taamarai.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TAUN_Maragadam";
+  src: url("../Assets/Myfonts/TAUN_Maragadam.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 5px; */
+  background-color: #0553a1;
+}
+
+.headerPrintview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  background-color: #0553a1;
+}
+
+.headerFixed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1px;
+  background-color: #0553a1;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  height: auto;
+  cursor: pointer;
+}
+
+.header-Image {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+}
+
+.epaper {
+  display: flex;
+  color: #fff;
+  font-size: 32px;
+  font-family: "TAUN_Maragadam";
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: 20%;
+}
+
+.epaperprint {
+  display: flex;
+  color: #fff;
+  font-size: 32px;
+  font-family: "TAUN_Maragadam";
+  justify-content: flex-start;
+  width: 40%;
+  margin-left: 20%;
+}
+
+.profile-icon {
+  font-size: 24px;
+  margin-left: 20px;
+  color: #fff;
+}
+
+/* Banner styles */
+.banner {
+  background-color: #ffb400;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-button {
+  background-color: #ff5733;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Button container styles */
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.click-button {
+  text-align: center;
+  background-color: #0553a1;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+  font-size: 25px;
+  font-family: "Taun_Taamarai";
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1%;
+  cursor: pointer;
+}
+.click-button:hover {
+  color: white;
+  box-shadow: 0.8px 0.4px 12.5px #4e90c9e8;
+  transform: scale(1.03);
+}
+
+.click-button svg {
+  margin: 0 10px;
+}
+
+.click-button img {
+  display: block;
+  margin: 0 auto 10px;
+  font-family: TAUN_Taamarai;
+  font-size: 20px;
+}
+
+/* Date input styles */
+.date-inputs {
+  width: 130px;
+}
+
+.Hdate-input {
+  margin-top: 0.5%;
+}
+
+.datePicker {
+  padding: 3px;
+  border: 3px solid #0553a1;
+  border-radius: 20px;
+  font-size: larger;
+  font-family: cursive;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Thumbnail styles */
+.thumbnail {
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.thumbnail img {
+  max-width: 80%;
+  height: auto;
+  filter: blur(1px);
+}
+
+.thumbnail:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a box shadow on hover */
+  transform: scale(1.05); /* Increase the size by 10% on hover */
+}
+
+/* Optionally, adjust the styles for the image on hover */
+.thumbnail:hover img {
+  filter: none; /* Remove the blur effect on hover */
+}
+
+/* Grid button styles */
+.grid-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+.grid-button {
+  background-color: #0553a1;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 12px;
+  font-family: TAUN_Taamarai;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.edition-div {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #0553a1;
+  color: #fcfafa;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: larger;
+  /* font-weight: bolder; */
+  max-width: fit-content;
+  font-family: "Taun_Taamarai";
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(51 51 51 / 12%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Add other styles for the popup here */
+}
+
+.popup img {
+  width: 30%;
+  height: auto;
+  margin: auto;
+  /* Add other styles for the image inside the popup here */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #0553a1;
+  color: #fcfafa;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bolder;
+  /* Add other styles for the close button here */
+}
+
+.reset-button {
+  position: absolute;
+  top: 65px;
+  left: 10px;
+  background-color: #0553a1;
+  color: #fcfafa;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.edition-div-button {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+/* Updated styles for centering the loading modal */
+.loading-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .thumbnail {
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 1px 4px 15px rgb(0 0 0 / 56%);
+  }
+
+  .header {
+    padding: 1px;
+  }
+
+  .epaper {
+    margin-left: 0%;
+  }
+
+  .epaperprint {
+    margin-left: -2%;
+    width: 100%;
+  }
+
+  .popup {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(51 51 51 / 12%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* Add other styles for the popup here */
+  }
+
+  .popup img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    /* Add other styles for the image inside the popup here */
+  }
+  .edition-div-button {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .date-inputs {
+    height: 20px;
+    font-size: small;
+    width: 60%;
+  }
+
+  .click-button {
+    font-size: 15px;
+    flex-direction: column;
+    padding: 1px;
+    width: 30%;
+  }
+
+  .reset-button {
+    display: none;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .datePicker {
+    font-size: small;
+  }
+
+  .thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+
+  .Hdate-input {
+    margin-top: 3%;
+  }
+
+  .logo {
+    height: auto;
+    cursor: pointer;
+    width: 55%;
+  }
+}

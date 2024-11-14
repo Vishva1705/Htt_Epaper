@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Taun_Taamarai";
+  src: url("../Assets/Myfonts/TAUN_Taamarai.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TAUN_Maragadam";
+  src: url("../Assets/Myfonts/TAUN_Maragadam.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 10px;
+  padding: 5px;
+  /* position: fixed;
+  overflow: scroll; */
+  height: 67%;
+  background-color: #ffffff;
+}
+
+.thumbnail-gridbox {
+  background-image: linear-gradient(white, rgb(216, 235, 252));
+  border-radius: 10px;
+}
+
+.thumbnailHeading {
+  font-family: "Taun_Taamarai";
+  font-size: 22px;
+  color: #ffffff;
+  background-color: #0553a1;
+  border-radius: 5px;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  box-shadow: 0.8px 0.4px 12.5px #828587b8;
+}
+.image-container img {
+  margin-top: 99%;
+}
+
+/* ImagePopup.css */
+
+.popup-content {
+  height: 100%;
+  background-color: rgba(92, 90, 90, 0.74);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.popup-content img {
+  margin-top: 3%;
+}
+
+.popup-content .Thumbedition-divposter {
+  position: absolute;
+  background-color: #0553a1;
+  color: #fcfafa;
+  border: 2px solid #0553a1;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: larger;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  font-family: "Taun_Taamarai";
+  cursor: pointer;
+  bottom: 2%;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+    margin-top: 0px;
+    padding: 8px;
+    height: 71%;
+  }
+
+  .thumbnail-gridbox {
+    background-image: linear-gradient(white, rgb(216, 235, 252));
+    border-radius: 10px;
+  }
+
+  .thumbnail img {
+    max-width: 80%;
+    height: auto;
+    filter: blur(1.5px);
+  }
+  .thumbnailHeading {
+    width: 82%;
+  }
+  .image-container img {
+    margin-top: 0;
+  }
+
+  .popup-content img {
+    margin-top: 25%;
+  }
+
+  .popup-content .Thumbedition-divposter {
+    animation: blink 1s infinite;
+    transition: background-color 0.3s;
+    font-size: 35px;
+  }
+}

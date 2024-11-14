@@ -1,0 +1,66 @@
+.Input_Holder {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff82;
+    margin-top: 0%;
+    width: 100%;
+}
+
+.ImageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imageViewer{
+    width: fit-content;
+    
+}
+.fetchedImage{
+    width: 100%;
+}
+
+.header-Image {
+    display: flex;
+    width: 35%;
+    justify-content: flex-start;
+}
+.epaperprint {
+    display: flex;
+    color: #fff;
+    font-size: 32px;
+    font-family: "TAUN_Maragadam";
+    justify-content: flex-start;
+    width: 40%;
+}
+
+.ZoomDiv{
+    position: fixed;
+    width: 100%;
+    bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .header-Image {
+        display: flex;
+        width: 50%;
+        justify-content: flex-start;
+    }
+    .epaperprint {
+        margin-left: -2%;
+        width: 100%;
+    }
+    .imageViewer{
+        width: fit-content;
+        margin-top: 5%;
+    }
+}
